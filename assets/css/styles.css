@@ -61,7 +61,7 @@ a:focus-visible {
 
 .map-header {
   width: min(1200px, 100% - clamp(48px, 10vw, 112px));
-  margin: clamp(24px, 5vw, 48px) auto 0;
+  margin: clamp(24px, 5vw, 48px) auto clamp(16px, 4vw, 32px);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -225,10 +225,58 @@ a:focus-visible {
   gap: clamp(12px, 2vh, 18px);
 }
 
-.map-figure img {
+.svg-map {
   width: min(940px, 100%);
-  height: auto;
+  margin-inline: auto;
+}
+
+.svg-map svg,
+.svg-map img {
   display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Tooltip for inline SVG municipalities */
+.map-tooltip {
+  position: fixed;
+  pointer-events: none;
+  z-index: 1200;
+  left: 0;
+  top: 0;
+  transform: translate3d(0,0,0);
+  transition: opacity 160ms ease, transform 160ms ease;
+  opacity: 0;
+}
+.map-tooltip.visible { opacity: 1; }
+.map-tooltip__card {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  background: linear-gradient(180deg, rgba(255,255,255,0.98), #fff);
+  border: 1px solid rgba(0,0,0,0.08);
+  padding: 0.45rem 0.6rem;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(2,6,23,0.16);
+}
+.map-tooltip__shield { width: 48px; height: 48px; object-fit: cover; border-radius: 6px; border: 1px solid rgba(0,0,0,0.06); }
+.map-tooltip__text { font-size: 0.9rem; color: #111; }
+.map-tooltip__code { font-size: 0.8rem; color: rgba(34, 34, 34, 0.7); }
+
+/* Visual highlight when municipality is focusable/hoverable */
+.svg-map [role="button"], .svg-map [tabindex] {
+  transition: filter 140ms ease, opacity 140ms ease, transform 160ms ease;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+.svg-map [role="button"]:hover,
+.svg-map [role="button"]:focus {
+  filter: drop-shadow(0 6px 14px rgba(0,0,0,0.18)) saturate(1.15);
+  opacity: 0.95;
+  transform: scale(1.08);
+}
+
+.map-figure img {
   border-radius: 12px;
   box-shadow: 0 25px 65px rgba(0, 0, 0, 0.45);
 }

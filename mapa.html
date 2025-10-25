@@ -4,44 +4,32 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Mapa Interactivo — Región de los Altos | JalisGO!</title>
-    <meta
-      name="description"
-      content="Descubre la región de los Altos de Jalisco con nuestro mapa interactivo JalisGO!."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,300&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
   <body class="map-page">
     <header class="map-header">
-      <a class="back-link" href="index.html">&larr; Volver al inicio</a>
+      <a href="./index.html" class="back-link">← Regresar</a>
       <img
         class="map-logo"
-        src="./assets/images/mapa_interactivo/JalisGO!.png"
-        width="220"
-        height="80"
+        src="./assets/images/pagina_principal/JalisGO!.png"
         alt="JalisGO!"
-        decoding="async"
       />
     </header>
 
-    <main class="map-main" aria-labelledby="mapa-regiones-altos">
+    <main class="map-main">
       <div class="map-shell">
-        <section class="region-info" aria-describedby="descripcion-regiones">
-          <h1 id="mapa-regiones-altos" class="map-title">Región Altos de Jalisco</h1>
-          <p id="descripcion-regiones" class="map-intro">
-            El mapa general de Jalisco está en construcción; este prototipo se centra en las regiones Altos Norte y Altos Sur. Identifica cada municipio y su clave geográfica siguiendo el color que lo resalta en la ilustración.
+        <section class="region-info">
+          <h1 class="map-title">Región Altos de Jalisco</h1>
+          <p class="map-intro">
+            Este prototipo muestra los municipios de las regiones Altos Norte y Altos Sur.
+            Coloca el cursor sobre cualquier municipio para ver su escudo y clave.
           </p>
 
           <div class="region-block region-block--norte">
-            <h2 class="region-heading">
-              <span class="region-swatch region-swatch--norte" aria-hidden="true"></span>
+            <div class="region-heading">
+              <span class="region-swatch region-swatch--norte"></span>
               Región Altos Norte
-            </h2>
+            </div>
             <ul class="municipality-list">
               <li><span>Encarnación de Díaz</span><span>035</span></li>
               <li><span>Lagos de Moreno</span><span>053</span></li>
@@ -55,10 +43,10 @@
           </div>
 
           <div class="region-block region-block--sur">
-            <h2 class="region-heading">
-              <span class="region-swatch region-swatch--sur" aria-hidden="true"></span>
+            <div class="region-heading">
+              <span class="region-swatch region-swatch--sur"></span>
               Región Altos Sur
-            </h2>
+            </div>
             <ul class="municipality-list">
               <li><span>Acatic</span><span>001</span></li>
               <li><span>Arandas</span><span>008</span></li>
@@ -68,7 +56,7 @@
               <li><span>Mexticacán</span><span>060</span></li>
               <li><span>San Ignacio Cerro Gordo</span><span>125</span></li>
               <li><span>San Julián</span><span>074</span></li>
-              <li><span>San Miguel El Alto</span><span>078</span></li>
+              <li><span>San Miguel el Alto</span><span>078</span></li>
               <li><span>Tepatitlán de Morelos</span><span>093</span></li>
               <li><span>Valle de Guadalupe</span><span>111</span></li>
               <li><span>Yahualica de González Gallo</span><span>118</span></li>
@@ -77,18 +65,12 @@
         </section>
 
         <figure class="map-figure">
-          <img
-            src="./assets/images/mapa_interactivo/mapa_interactivo.svg"
-            width="960"
-            height="640"
-            alt="Mapa de la región de los Altos de Jalisco resaltando los municipios"
-            decoding="async"
-          />
-          <figcaption class="map-note">
-            Mapa ilustrativo de referencia para la división municipal de la región de los Altos.
-          </figcaption>
+          <div id="map-container" class="svg-map" aria-hidden="true"></div>
+          <figcaption>Mapa ilustrativo de referencia para la región de los Altos.</figcaption>
         </figure>
       </div>
     </main>
+
+    <script src="./assets/js/map-interaction.js" defer></script>
   </body>
 </html>
