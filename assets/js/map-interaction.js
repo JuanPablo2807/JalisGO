@@ -27,6 +27,7 @@
       clave: '117',
       escudoSrc: './assets/images/mapa_interactivo/canadasdeobregon_escudo.jpg',
       selector: '#municipio-117, [data-municipio="canadas-de-obregon"]',
+      link: './municipios/canadas-de-obregon.html',
     },
     {
       slug: 'jalostotitlan',
