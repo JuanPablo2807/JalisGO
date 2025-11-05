@@ -424,6 +424,12 @@ a:focus-visible {
   line-height: 1.7;
 }
 
+.municipality-card__title {
+  font-size: clamp(1.1rem, 2.4vw, 1.45rem);
+  font-weight: 600;
+  color: var(--elote);
+}
+
 @media (max-width: 1080px) {
   .map-header {
     width: min(1080px, 100% - clamp(32px, 8vw, 72px));

@@ -20,6 +20,7 @@
       clave: '008',
       escudoSrc: './assets/images/mapa_interactivo/arandas_escudo.png',
       selector: '#municipio-arandas, [data-municipio="arandas"]',
+      link: './municipios/arandas.html',
     },
     {
       slug: 'canadas-de-obregon',
@@ -77,6 +78,7 @@
       clave: '093',
       escudoSrc: './assets/images/mapa_interactivo/tepatitlan_escudo.jpg',
       selector: '#municipio-tepatitlan, [data-municipio="tepatitlan-de-morelos"]',
+      link: './municipios/tepatitlan-de-morelos.html',
     },
     {
       slug: 'valle-de-guadalupe',
