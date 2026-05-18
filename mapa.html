@@ -18,49 +18,284 @@
 
     <main class="map-main">
       <div class="map-shell">
-        <section class="region-info">
+        <div class="map-head">
           <h1 class="map-title">Región Altos de Jalisco</h1>
           <p class="map-intro">
-            Este prototipo muestra los municipios de las regiones Altos Norte y Altos Sur.
+            Consulta todas las regiones de Jalisco y explora los municipios disponibles en el mapa.
             Coloca el cursor sobre cualquier municipio para ver su escudo y clave.
           </p>
+        </div>
 
-          <div class="region-block region-block--norte">
-            <div class="region-heading">
-              <span class="region-swatch region-swatch--norte"></span>
-              Región Altos Norte
-            </div>
-            <ul class="municipality-list">
-              <li><span>Encarnación de Díaz</span><span>035</span></li>
-              <li><span>Lagos de Moreno</span><span>053</span></li>
-              <li><span>Ojuelos de Jalisco</span><span>064</span></li>
-              <li><span>San Diego de Alejandría</span><span>072</span></li>
-              <li><span>San Juan de los Lagos</span><span>073</span></li>
-              <li><span>Teocaltiche</span><span>091</span></li>
-              <li><span>Unión de San Antonio</span><span>109</span></li>
-              <li><span>Villa Hidalgo</span><span>116</span></li>
-            </ul>
-          </div>
+        <section class="region-info">
+          <div class="region-accordion-list">
+            <details class="region-accordion region-accordion--norte">
+              <summary class="region-accordion__summary">
+                <span class="region-accordion__heading">
+                  <span class="region-accordion__badge" aria-hidden="true"></span>
+                  <span class="region-accordion__title">Región Norte</span>
+                </span>
+                <span class="region-accordion__chevron" aria-hidden="true"></span>
+              </summary>
+              <ul class="region-accordion__list">
+                <li>Bolaños</li>
+                <li>Colotlán</li>
+                <li>Huejuquilla el Alto</li>
+                <li>San Martín de Bolaños</li>
+                <li>Totatiche</li>
+                <li>Chimaltitán</li>
+                <li>Huejúcar</li>
+                <li>Mezquitic</li>
+                <li>Santa María de los Ángeles</li>
+                <li>Villa Guerrero</li>
+              </ul>
+            </details>
 
-          <div class="region-block region-block--sur">
-            <div class="region-heading">
-              <span class="region-swatch region-swatch--sur"></span>
-              Región Altos Sur
-            </div>
-            <ul class="municipality-list">
-              <li><span>Acatic</span><span>001</span></li>
-              <li><span>Arandas</span><span>008</span></li>
-              <li><span>Cañadas de Obregón</span><span>117</span></li>
-              <li><span>Jalostotitlán</span><span>046</span></li>
-              <li><span>Jesús María</span><span>048</span></li>
-              <li><span>Mexticacán</span><span>060</span></li>
-              <li><span>San Ignacio Cerro Gordo</span><span>125</span></li>
-              <li><span>San Julián</span><span>074</span></li>
-              <li><span>San Miguel el Alto</span><span>078</span></li>
-              <li><span>Tepatitlán de Morelos</span><span>093</span></li>
-              <li><span>Valle de Guadalupe</span><span>111</span></li>
-              <li><span>Yahualica de González Gallo</span><span>118</span></li>
-            </ul>
+            <details class="region-accordion region-accordion--altos-norte">
+              <summary class="region-accordion__summary">
+                <span class="region-accordion__heading">
+                  <span class="region-accordion__badge" aria-hidden="true"></span>
+                  <span class="region-accordion__title">Región Altos Norte</span>
+                </span>
+                <span class="region-accordion__chevron" aria-hidden="true"></span>
+              </summary>
+              <ul class="region-accordion__list">
+                <li>Encarnación de Díaz</li>
+                <li>Ojuelos de Jalisco</li>
+                <li>San Juan de los Lagos</li>
+                <li>Unión de San Antonio</li>
+                <li>Lagos de Moreno</li>
+                <li>San Diego de Alejandría</li>
+                <li>Teocaltiche</li>
+                <li>Villa Hidalgo</li>
+              </ul>
+            </details>
+
+            <details class="region-accordion region-accordion--altos-sur">
+              <summary class="region-accordion__summary">
+                <span class="region-accordion__heading">
+                  <span class="region-accordion__badge" aria-hidden="true"></span>
+                  <span class="region-accordion__title">Región Altos Sur</span>
+                </span>
+                <span class="region-accordion__chevron" aria-hidden="true"></span>
+              </summary>
+              <ul class="region-accordion__list">
+                <li>Acatic</li>
+                <li><a class="region-accordion__link" href="./municipios/arandas.html">Arandas</a></li>
+                <li><a class="region-accordion__link" href="./municipios/canadas-de-obregon.html">Cañadas de Obregón</a></li>
+                <li>Jesús María</li>
+                <li>San Ignacio Cerro Gordo</li>
+                <li>San Miguel el Alto</li>
+                <li>Valle de Guadalupe</li>
+                <li>Jalostotitlán</li>
+                <li>Mexticacán</li>
+                <li>San Julián</li>
+                <li><a class="region-accordion__link" href="./municipios/tepatitlan-de-morelos.html">Tepatitlán de Morelos</a></li>
+                <li>Yahualica de González Gallo</li>
+              </ul>
+            </details>
+
+            <details class="region-accordion region-accordion--cienega">
+              <summary class="region-accordion__summary">
+                <span class="region-accordion__heading">
+                  <span class="region-accordion__badge" aria-hidden="true"></span>
+                  <span class="region-accordion__title">Región Ciénega</span>
+                </span>
+                <span class="region-accordion__chevron" aria-hidden="true"></span>
+              </summary>
+              <ul class="region-accordion__list">
+                <li>Atotonilco el Alto</li>
+                <li>Degollado</li>
+                <li>La Barca</li>
+                <li>Poncitlán</li>
+                <li>Zapotlán del Rey</li>
+                <li>Ayotlán</li>
+                <li>Jamay</li>
+                <li>Ocotlán</li>
+                <li>Tototlán</li>
+              </ul>
+            </details>
+
+            <details class="region-accordion region-accordion--sureste">
+              <summary class="region-accordion__summary">
+                <span class="region-accordion__heading">
+                  <span class="region-accordion__badge" aria-hidden="true"></span>
+                  <span class="region-accordion__title">Región Sureste</span>
+                </span>
+                <span class="region-accordion__chevron" aria-hidden="true"></span>
+              </summary>
+              <ul class="region-accordion__list">
+                <li>Chapala</li>
+                <li>Jocotepec</li>
+                <li>Mazamitla</li>
+                <li>Santa María del Oro</li>
+                <li>Tuxcueca</li>
+                <li>Concepción de Buenos Aires</li>
+                <li>La Manzanilla de la Paz</li>
+                <li>Quitupan</li>
+                <li>Tizapán el Alto</li>
+                <li>Valle de Juárez</li>
+              </ul>
+            </details>
+
+            <details class="region-accordion region-accordion--sur">
+              <summary class="region-accordion__summary">
+                <span class="region-accordion__heading">
+                  <span class="region-accordion__badge" aria-hidden="true"></span>
+                  <span class="region-accordion__title">Región Sur</span>
+                </span>
+                <span class="region-accordion__chevron" aria-hidden="true"></span>
+              </summary>
+              <ul class="region-accordion__list">
+                <li>Gómez Farías</li>
+                <li>Pihuamo</li>
+                <li>Tamazula de Gordiano</li>
+                <li>Tolimán</li>
+                <li>Tuxpan</li>
+                <li>Zapotitlán de Vadillo</li>
+                <li>Jilotlán de los Dolores</li>
+                <li>San Gabriel</li>
+                <li>Tecalitlán</li>
+                <li>Tonila</li>
+                <li>Zapotiltic</li>
+                <li>Zapotlán el Grande</li>
+              </ul>
+            </details>
+
+            <details class="region-accordion region-accordion--sierra-amula">
+              <summary class="region-accordion__summary">
+                <span class="region-accordion__heading">
+                  <span class="region-accordion__badge" aria-hidden="true"></span>
+                  <span class="region-accordion__title">Región Sierra de Amula</span>
+                </span>
+                <span class="region-accordion__chevron" aria-hidden="true"></span>
+              </summary>
+              <ul class="region-accordion__list">
+                <li>Atengo</li>
+                <li>Ayutla</li>
+                <li>Cuautla</li>
+                <li>El Grullo</li>
+                <li>Juchitlán</li>
+                <li>Tenamaxtlán</li>
+                <li>Autlán de Navarro</li>
+                <li>Chiquilistlán</li>
+                <li>Ejutla</li>
+                <li>El Limón</li>
+                <li>Tecolotlán</li>
+                <li>Tonaya</li>
+                <li>Tuxcacuesco</li>
+                <li>Unión de Tula</li>
+              </ul>
+            </details>
+
+            <details class="region-accordion region-accordion--costa-sur">
+              <summary class="region-accordion__summary">
+                <span class="region-accordion__heading">
+                  <span class="region-accordion__badge" aria-hidden="true"></span>
+                  <span class="region-accordion__title">Región Costa Sur</span>
+                </span>
+                <span class="region-accordion__chevron" aria-hidden="true"></span>
+              </summary>
+              <ul class="region-accordion__list">
+                <li>Casimiro Castillo</li>
+                <li>Cuautitlán de García Barragán</li>
+                <li>Tomatlán</li>
+                <li>Cihuatlán</li>
+                <li>La Huerta</li>
+                <li>Villa Purificación</li>
+              </ul>
+            </details>
+
+            <details class="region-accordion region-accordion--costa-sierra-occidental">
+              <summary class="region-accordion__summary">
+                <span class="region-accordion__heading">
+                  <span class="region-accordion__badge" aria-hidden="true"></span>
+                  <span class="region-accordion__title">Región Costa-Sierra Occidental</span>
+                </span>
+                <span class="region-accordion__chevron" aria-hidden="true"></span>
+              </summary>
+              <ul class="region-accordion__list">
+                <li>Atenguillo</li>
+                <li>Guachinango</li>
+                <li>Mixtlán</li>
+                <li>San Sebastián del Oeste</li>
+                <li>Cabo Corrientes</li>
+                <li>Mascota</li>
+                <li>Puerto Vallarta</li>
+                <li>Talpa de Allende</li>
+              </ul>
+            </details>
+
+            <details class="region-accordion region-accordion--valles">
+              <summary class="region-accordion__summary">
+                <span class="region-accordion__heading">
+                  <span class="region-accordion__badge" aria-hidden="true"></span>
+                  <span class="region-accordion__title">Región Valles</span>
+                </span>
+                <span class="region-accordion__chevron" aria-hidden="true"></span>
+              </summary>
+              <ul class="region-accordion__list">
+                <li>Ahualulco de Mercado</li>
+                <li>Ameca</li>
+                <li>Etzatlán</li>
+                <li>Magdalena</li>
+                <li>San Marcos</li>
+                <li>Tequila</li>
+                <li>Amatitán</li>
+                <li>El Arenal</li>
+                <li>Hostotipaquillo</li>
+                <li>San Juanito de Escobedo</li>
+                <li>Tala</li>
+                <li>Teuchitlán</li>
+              </ul>
+            </details>
+
+            <details class="region-accordion region-accordion--lagunas">
+              <summary class="region-accordion__summary">
+                <span class="region-accordion__heading">
+                  <span class="region-accordion__badge" aria-hidden="true"></span>
+                  <span class="region-accordion__title">Región Lagunas</span>
+                </span>
+                <span class="region-accordion__chevron" aria-hidden="true"></span>
+              </summary>
+              <ul class="region-accordion__list">
+                <li>Acatlán de Juárez</li>
+                <li>Atemajac de Brizuela</li>
+                <li>Cocula</li>
+                <li>Sayula</li>
+                <li>Techaluta de Montenegro</li>
+                <li>Villa Corona</li>
+                <li>Amacueca</li>
+                <li>Atoyac</li>
+                <li>San Martín Hidalgo</li>
+                <li>Tapalpa</li>
+                <li>Teocuitatlán de Corona</li>
+                <li>Zacoalco de Torres</li>
+              </ul>
+            </details>
+
+            <details class="region-accordion region-accordion--centro">
+              <summary class="region-accordion__summary">
+                <span class="region-accordion__heading">
+                  <span class="region-accordion__badge" aria-hidden="true"></span>
+                  <span class="region-accordion__title">Región Centro</span>
+                </span>
+                <span class="region-accordion__chevron" aria-hidden="true"></span>
+              </summary>
+              <ul class="region-accordion__list">
+                <li>Cuquío</li>
+                <li>Guadalajara</li>
+                <li>Ixtlahuacán del Río</li>
+                <li>San Cristóbal de la Barranca</li>
+                <li>Tlajomulco de Zúñiga</li>
+                <li>Zapopan</li>
+                <li>El Salto</li>
+                <li>Ixtlahuacán de los Membrillos</li>
+                <li>Juanacatlán</li>
+                <li>San Pedro Tlaquepaque</li>
+                <li>Tonalá</li>
+                <li>Zapotlanejo</li>
+              </ul>
+            </details>
           </div>
         </section>
 
