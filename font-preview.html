@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JalisGO! — Prueba de tipografias</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;800&family=Archivo:wght@700&family=Bebas+Neue&family=Anton&family=Inter:wght@700&family=Sora:wght@700;800&family=Manrope:wght@700;800&family=Space+Grotesk:wght@700&family=Urbanist:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f2f1ed;
+        --ink: #2d5c73;
+        --accent: #8b7aa8;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: 'Manrope', sans-serif;
+        background: radial-gradient(120% 120% at 12% 8%, rgba(207, 227, 211, 0.55) 0%, transparent 55%),
+          radial-gradient(140% 140% at 92% 6%, rgba(120, 178, 214, 0.35) 0%, transparent 62%),
+          var(--bg);
+        color: #39414b;
+        min-height: 100vh;
+      }
+
+      header {
+        padding: clamp(20px, 5vw, 48px);
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+      }
+
+      h1 {
+        font-size: clamp(1.7rem, 3vw, 2.3rem);
+        color: var(--ink);
+        letter-spacing: 0.5px;
+      }
+
+      p {
+        max-width: 68ch;
+        line-height: 1.6;
+        color: #4b5867;
+      }
+
+      main {
+        display: grid;
+        gap: clamp(18px, 4vw, 32px);
+        padding: 0 clamp(20px, 6vw, 64px) clamp(40px, 8vw, 96px);
+      }
+
+      .card {
+        background: rgba(255, 255, 255, 0.85);
+        border: 1px solid rgba(0, 0, 0, 0.06);
+        border-radius: 16px;
+        padding: clamp(18px, 4vw, 32px);
+        box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+        display: grid;
+        gap: 0.9rem;
+      }
+
+      .sample-title {
+        font-size: clamp(1.6rem, 4vw, 2.4rem);
+        color: var(--ink);
+        letter-spacing: 0.4px;
+      }
+
+      .sample-cta {
+        display: inline-flex;
+        gap: 0.2rem;
+        align-items: baseline;
+        padding: 0.6rem 2rem;
+        background: linear-gradient(135deg, rgba(45, 92, 115, 0.95), rgba(139, 122, 168, 0.9));
+        color: #f2f1ed;
+        border-radius: 12px;
+        font-size: 1.2rem;
+        letter-spacing: 0.5px;
+        text-decoration: none;
+      }
+
+      .font-label {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: var(--accent);
+      }
+
+      .font-preview {
+        font-size: clamp(1.3rem, 3vw, 2rem);
+        line-height: 1.2;
+        color: #1f2b3a;
+      }
+
+      .font-secondary {
+        font-size: 1rem;
+        color: #465264;
+      }
+
+      .spartan { font-family: 'League Spartan', sans-serif; font-weight: 800; }
+      .bebas { font-family: 'Bebas Neue', sans-serif; font-weight: 400; letter-spacing: 1px; }
+      .archivo { font-family: 'Archivo', sans-serif; font-weight: 700; }
+      .anton { font-family: 'Anton', sans-serif; font-weight: 400; letter-spacing: 0.6px; }
+      .inter { font-family: 'Inter', sans-serif; font-weight: 700; }
+      .sora { font-family: 'Sora', sans-serif; font-weight: 800; }
+      .manrope { font-family: 'Manrope', sans-serif; font-weight: 800; }
+      .space { font-family: 'Space Grotesk', sans-serif; font-weight: 700; }
+      .urbanist { font-family: 'Urbanist', sans-serif; font-weight: 800; }
+
+      @media (max-width: 720px) {
+        .sample-cta {
+          font-size: 1.05rem;
+          padding: 0.55rem 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Prueba de tipografias BOLD para JalisGO!</h1>
+      <p>
+        Mira cada tarjeta para comparar el estilo. Cada fuente muestra un titulo y un boton tipo CTA
+        con el texto JalisGO!. Cuando decidas, dime el numero para aplicarla en el sitio.
+      </p>
+    </header>
+
+    <main>
+      <section class="card">
+        <span class="font-label">1) League Spartan 800</span>
+        <div class="font-preview spartan">REGION ALTOS DE JALISCO</div>
+        <div class="font-secondary spartan">Tipografia geometrica, fuerte y limpia.</div>
+        <a class="sample-cta spartan" href="#">JalisGO!</a>
+      </section>
+
+      <section class="card">
+        <span class="font-label">2) Bebas Neue 400 + Archivo 700</span>
+        <div class="font-preview bebas">REGION ALTOS DE JALISCO</div>
+        <div class="font-secondary archivo">Combina display alto con cuerpo robusto.</div>
+        <a class="sample-cta bebas" href="#">JalisGO!</a>
+      </section>
+
+      <section class="card">
+        <span class="font-label">3) Anton 400 + Inter 700</span>
+        <div class="font-preview anton">REGION ALTOS DE JALISCO</div>
+        <div class="font-secondary inter">Impacto fuerte y moderno para titulos.</div>
+        <a class="sample-cta anton" href="#">JalisGO!</a>
+      </section>
+
+      <section class="card">
+        <span class="font-label">4) Sora 800</span>
+        <div class="font-preview sora">REGION ALTOS DE JALISCO</div>
+        <div class="font-secondary sora">Futurista suave y muy moderna.</div>
+        <a class="sample-cta sora" href="#">JalisGO!</a>
+      </section>
+
+      <section class="card">
+        <span class="font-label">5) Manrope 800</span>
+        <div class="font-preview manrope">REGION ALTOS DE JALISCO</div>
+        <div class="font-secondary manrope">Limpia, elegante y muy usable.</div>
+        <a class="sample-cta manrope" href="#">JalisGO!</a>
+      </section>
+
+      <section class="card">
+        <span class="font-label">6) Space Grotesk 700</span>
+        <div class="font-preview space">REGION ALTOS DE JALISCO</div>
+        <div class="font-secondary space">Tech y contemporanea.</div>
+        <a class="sample-cta space" href="#">JalisGO!</a>
+      </section>
+
+      <section class="card">
+        <span class="font-label">7) Urbanist 800</span>
+        <div class="font-preview urbanist">REGION ALTOS DE JALISCO</div>
+        <div class="font-secondary urbanist">Redondeada y friendly.</div>
+        <a class="sample-cta urbanist" href="#">JalisGO!</a>
+      </section>
+    </main>
+  </body>
+</html>
